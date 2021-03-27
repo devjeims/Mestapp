@@ -1,4 +1,4 @@
-package co.com.devjs.mestapp.chat;
+package co.com.devjs.mestapp;
 
 import android.os.Bundle;
 
@@ -9,24 +9,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
-import android.widget.ListView;
 
-import java.util.List;
-
-import butterknife.BindView;
-import co.com.devjs.mestapp.R;
-import co.com.devjs.mestapp.models.Chat;
-
-public class ChatListActivity extends AppCompatActivity {
-
-    private List<Chat> chatList;
-    @BindView(R.id.listViewChats)
-    ListView listViewChats;
+public class ChatActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat_list);
+        setContentView(R.layout.activity_chat);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -38,7 +27,5 @@ public class ChatListActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-
     }
 }

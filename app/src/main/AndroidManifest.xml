@@ -10,10 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mestapp">
         <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/Theme.Mestapp.NoActionBar"></activity>
+        <activity
             android:name=".chat.ChatListActivity"
             android:label="@string/title_activity_chat_list"
-            android:theme="@style/Theme.Mestapp.NoActionBar"></activity>
-        <activity android:name=".login.ActivitySignUp" />
+            android:theme="@style/Theme.Mestapp.NoActionBar" />
+        <activity android:name=".login.SignUpActivity" />
         <activity
             android:name=".login.LoginActivity"
             android:label="@string/title_activity_login"

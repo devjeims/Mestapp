@@ -1,5 +1,6 @@
 package co.com.devjs.mestapp.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -11,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import co.com.devjs.mestapp.R;
+import co.com.devjs.mestapp.chat.ChatListActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -21,4 +23,16 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
+
+    public void goToSingup(View view){
+        Intent intent = new Intent(this, SignUpActivity.class);
+        this.startActivity(intent);
+        finish();
+    }
+    public void goToChatList(View view){
+        Intent intent = new Intent(this, ChatListActivity.class);
+        this.startActivity(intent);
+        finish();
+    }
+
 }
