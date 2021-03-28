@@ -3,16 +3,15 @@ package co.com.devjs.mestapp.login;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
+import co.com.devjs.mestapp.ChatActivity;
+import co.com.devjs.mestapp.ChatListActivity;
 import co.com.devjs.mestapp.R;
-import co.com.devjs.mestapp.chat.ChatListActivity;
+import co.com.devjs.mestapp.chat.ChatListFragment;
 
 public class LoginActivity extends AppCompatActivity {
 

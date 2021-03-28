@@ -14,7 +14,7 @@
             android:label="@string/title_activity_chat"
             android:theme="@style/Theme.Mestapp.NoActionBar"></activity>
         <activity
-            android:name=".chat.ChatListActivity"
+            android:name=".ChatListActivity"
             android:label="@string/title_activity_chat_list"
             android:theme="@style/Theme.Mestapp.NoActionBar" />
         <activity android:name=".login.SignUpActivity" />
